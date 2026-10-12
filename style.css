@@ -1,0 +1,46 @@
+/* Black and purple theme */
+:root{--bg:#09070d;--panel:#15101d;--panel-hover:#20152b;--purple:#b88aff;--bright-purple:#d6b8ff;--text:#f5f0fa;--muted:#b1a8ba;--border:#352441}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.7;overflow-x:hidden}
+a{color:inherit;text-decoration:none}.container{width:min(1120px,88%);margin:0 auto}
+.site-header{position:sticky;top:0;z-index:100;background:rgba(9,7,13,.94);border-bottom:1px solid var(--border);backdrop-filter:blur(14px)}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-size:1.65rem;font-weight:900;letter-spacing:1px}.logo span,h1 span,h2 span,blockquote span{color:var(--purple)}
+.nav-links{display:flex;align-items:center;gap:26px}.nav-links a{color:var(--muted);font-size:.92rem;transition:color .25s}.nav-links a:hover,.footer-inner a:hover{color:var(--purple)}
+.menu-toggle{display:none;color:var(--text);background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:9px 12px;cursor:pointer}
+.hero{min-height:690px;display:grid;grid-template-columns:1.1fr .8fr;align-items:center;gap:64px;padding:70px 0 90px}
+.eyebrow,.section-number{color:var(--purple);text-transform:uppercase;font-size:.78rem;font-weight:800;letter-spacing:2px}
+h1{margin:20px 0 22px;font-size:clamp(3.4rem,7vw,5.7rem);line-height:1.08;letter-spacing:-3px}
+.hero-description{color:var(--muted);max-width:620px;margin-bottom:28px}
+.button{display:inline-block;background:var(--purple);color:#170d20;padding:14px 22px;border-radius:9px;font-weight:800;transition:transform .25s,background .25s}.button:hover{transform:translateY(-3px);background:var(--bright-purple)}
+.text-link{display:inline-block;color:var(--purple);font-weight:700;margin-left:18px}
+.photo-wrapper{position:relative;max-width:390px;width:100%;justify-self:end;padding:12px;border:1px solid var(--border);border-radius:20px;background:var(--panel);box-shadow:0 20px 70px #0004}
+.profile-photo{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px;background:var(--panel-hover)}
+.photo-caption{display:flex;justify-content:space-between;gap:12px;padding:14px 4px 4px;font-weight:700}.photo-caption span:last-child{color:var(--purple);font-size:.88rem}
+.content-section{padding:100px 0;border-top:1px solid var(--border)}.section-heading{margin-bottom:36px}
+h2{font-size:clamp(2.2rem,4vw,3rem);line-height:1.2;margin-top:12px;letter-spacing:-1px}
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:24px;align-items:stretch}
+.about-card,.about-copy,.hobby-card,.project-card,.skills-panel{background:var(--panel);border:1px solid var(--border);border-radius:16px}
+.about-card{padding:30px}.big-name{color:var(--purple);font-size:clamp(3.2rem,6vw,5rem);font-weight:900;line-height:1.1;margin-bottom:22px}
+.small-label{color:var(--muted);font-size:.72rem;letter-spacing:1.8px;font-weight:800;margin-top:18px}.about-card p{margin-top:3px}
+.about-copy{padding:30px}.about-copy h3{color:var(--purple);font-size:1.05rem;margin-bottom:5px}.about-copy p{color:var(--muted);margin-bottom:20px}.about-copy p:last-child{margin-bottom:0}
+.hobby-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.hobby-card{display:flex;align-items:flex-start;gap:18px;padding:24px;transition:transform .25s,background .25s}.hobby-card:hover,.project-card:hover{transform:translateY(-4px);background:var(--panel-hover)}
+.hobby-icon{flex:0 0 46px;height:46px;display:grid;place-items:center;color:var(--purple);background:#281b35;border:1px solid var(--border);border-radius:12px;font-size:1.25rem}
+h3{font-size:1.05rem;margin-bottom:4px}.hobby-card p,.project-card p{color:var(--muted);font-size:.94rem}
+.quote{margin-top:36px;padding:28px 32px;border-left:3px solid var(--purple);background:linear-gradient(90deg,#b88aff14,transparent)}
+.quote-mark{color:var(--purple);font-size:2.4rem;font-weight:900;line-height:1}.quote blockquote{margin-top:12px;font-size:clamp(1.25rem,2.5vw,1.8rem);font-weight:800;line-height:1.4}
+.skills-panel{display:flex;flex-wrap:wrap;gap:12px;padding:28px}.skill-tag{padding:10px 18px;border:1px solid #62447b;color:var(--text);border-radius:999px;background:#21162b}
+.project-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.project-card{overflow:hidden;transition:transform .25s,background .25s}.project-content{padding:24px}.project-content p{margin:10px 0 18px}.project-link{display:inline-block;color:var(--purple);font-weight:800;margin-top:8px}.project-link:hover{color:var(--bright-purple);text-decoration:underline}
+.contact-panel{display:flex;justify-content:space-between;align-items:center;gap:30px;padding:34px;background:var(--panel);border:1px solid var(--border);border-radius:18px}
+.contact-panel p{color:var(--muted);max-width:650px;margin-top:12px}.email-line{color:var(--text)!important;overflow-wrap:anywhere}.email-note{font-size:.84rem}.contact-panel .button{flex-shrink:0}
+footer{padding:28px 0}.footer-inner{display:flex;justify-content:space-between;gap:18px;color:var(--muted);font-size:.88rem}.footer-inner a{transition:color .2s}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}.reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:850px){.nav-links{gap:14px}.hero{gap:32px}.project-grid{grid-template-columns:1fr}}
+@media(max-width:680px){.container{width:min(100% - 36px,560px)}.nav{min-height:68px}.menu-toggle{display:block}
+.nav-links{display:none;position:absolute;top:68px;left:0;right:0;padding:18px 6%;flex-direction:column;align-items:flex-start;background:#100b16;border-bottom:1px solid var(--border)}
+.nav-links.open{display:flex}.hero{min-height:auto;grid-template-columns:1fr;padding:76px 0 72px}h1{letter-spacing:-2px;font-size:clamp(3rem,13vw,4.4rem)}
+.photo-wrapper{justify-self:start;max-width:340px}.content-section{padding:72px 0}.about-grid,.hobby-grid{grid-template-columns:1fr}
+.about-card,.about-copy{padding:24px}.contact-panel{align-items:flex-start;flex-direction:column;padding:26px}.text-link{margin-left:12px}.footer-inner{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
